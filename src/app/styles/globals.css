@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #fafafa;
   --foreground: #171717;
 }
 
@@ -23,4 +23,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.ant-input::placeholder {
+  color: #0a0a0a !important;
+  opacity: 1;
+}
+
+.dark .ant-input::placeholder {
+  color: #fff !important;
+  opacity: 1;
 }
