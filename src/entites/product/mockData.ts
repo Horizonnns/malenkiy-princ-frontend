@@ -19,4 +19,11 @@ export const mockProductCardData: ProductCardType[] = [
     title: "SUMMER SAND CLASSIC",
     price: 129,
   },
+
+  {
+    image:
+      "https://cdn.shopware.store/a/B/m/pPkDE/media/33/88/8c/Barefoot-Living-2746.jpg?ts=1596695193",
+    title: "LIGHT DARK CLASSIC",
+    price: 119,
+  },
 ];

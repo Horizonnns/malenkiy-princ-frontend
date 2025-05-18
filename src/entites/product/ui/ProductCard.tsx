@@ -4,11 +4,11 @@ export default function ProductCard() {
   const product = mockProductCardData;
 
   return (
-    <div className="w-full grid grid-cols-3 gap-4">
+    <div className="w-full grid grid-cols-4 justify-baseline gap-4">
       {product.map((product) => (
         <div
           key={product.title}
-          className="w-72 h-72 flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-blue-600 dark:bg-black relative border-neutral-200 dark:border-neutral-800"
+          className="w-full h-80 bg-white group cursor-pointer flex flex-col items-center justify-center overflow-hidden rounded-lg border  hover:border-blue-600 dark:bg-black relative border-neutral-200 dark:border-neutral-800"
         >
           <img
             alt="Image showing the thumbnail of the product"
@@ -25,7 +25,7 @@ export default function ProductCard() {
               bottom: "0",
               color: "transparent",
             }}
-            // sizes="(min-width: 768px) 66vw, 100vw"
+            sizes="(min-width: 768px) 66vw, 100vw"
             src={product.image}
           />
           <div className="absolute bottom-0 left-0 flex w-full px-4 pb-4">
@@ -35,7 +35,7 @@ export default function ProductCard() {
               </h3>
               <p className="flex-none rounded-full bg-blue-600 p-2 text-white">
                 {product.price}
-                <span className="ml-1 inline  @[275px]/label:inline">EUR</span>
+                <span className="ml-1 inline  @[275px]/label:inline">TJS</span>
               </p>
             </div>
           </div>
